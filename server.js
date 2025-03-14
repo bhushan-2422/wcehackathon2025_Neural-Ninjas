@@ -10,13 +10,10 @@ app.use(cors()); // Allow frontend-backend communication
 app.use(express.json()); // Parse JSON data in requests
 
 // MongoDB connection
-const mongoURI = "mongodb+srv://bpanse2411:ITW3hkcvUdd1Dxdr@aqua-track.a4gty.mongodb.net/emailDB?retryWrites=true&w=majority&appName=aqua-track";
-mongoose.connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-.then(() => console.log("Connected to MongoDB"))
-.catch((err) => console.error("Error connecting to MongoDB:", err.message));
+const mongoURI = process.env.MONGODB_URI || "mongodb+srv://bpanse2411:ITW3hkcvUdd1Dxdr@aqua-track.a4gty.mongodb.net/emailDB?retryWrites=true&w=majority&appName=aqua-track";
+mongoose.connect(mongoURI)
+    .then(() => console.log("Connected to MongoDB"))
+    .catch((err) => console.error("Error connecting to MongoDB:", err.message));
 
 // Define a schema for emails
 const emailSchema = new mongoose.Schema({

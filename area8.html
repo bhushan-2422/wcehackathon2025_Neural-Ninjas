@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area 8</title>
+    <link rel="stylesheet" href="area1.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/logoofaquatrack.jpeg" alt="" loading="lazy" id="gamesync-logo">
+             Aqua-Track
+        </div>
+        <div class="navoptions">
+            <a href="index.html" id="home">Home</a>
+            <a href="gamepage.html"  id="features">Features</a>
+            <a href=""  id="pricing">Pricing</a>
+            <a href=""  id="blog">Blog</a>
+            <a href=""  id="about">About</a>
+        </div>
+        
+
+        
+    </div>
+
+<br><br><br>
+
+
+
+    
+
+
+    
+    <div class="container">
+        
+    
+        <div class="left">
+            <div class="areaname">
+                Area 8
+            </div>
+            <div class="image">
+                
+
+                <img src="./images/vishrambagmain.jpeg">
+            </div>
+            <div class="pipe-container">
+            <div class="spipe15 spipes sarea8a">15</div>
+            <div class="spipe22 spipes sarea8a">22</div>
+            <div class="spipe23 spipes sarea8a">23</div>
+            <div class="spipe27 pipe27-1 spipes sarea8a">27</div>
+            </div>
+
+        </div>
+        <div class="right">
+
+            <div class="info">
+                <h1>Reasons</h1>
+                <div class="reason">
+                    <ol class="slist8">
+
+                    </ol>
+                </div>
+            </div>
+            <br><br>
+            <button class="checkout"><a href="./email-service/email.html" class="call-button">checkout</a></button>
+            
+        </div>
+    </div>
+    <script >
+        
+        window.onload = function () {
+            let storedData = localStorage.getItem("listData8");
+        
+            if (storedData) {
+                let itemsArray = JSON.parse(storedData);
+                let list = document.querySelector(".slist8");
+        
+                itemsArray.forEach(itemText => {
+                    let li = document.createElement("li");
+                    li.innerText = itemText;
+                    list.appendChild(li);
+                });
+        
+                console.log("List loaded from localStorage");
+            } else {
+                console.log("No data found in localStorage");
+            }
+
+            let savedColor8 = localStorage.getItem("savedColor8");
+    let sarea8a = document.querySelectorAll(".sarea8a");
+    if (savedColor8 && sarea8a) {
+        sarea8a.forEach(element => {
+        element.style.backgroundColor = savedColor8; // Apply stored color to all matching elements
+    });    }
+};
+        
+       
+            </script>
+        
+        
+
+
+    
+
+    
+
+
+
+
+
+
+</body>
+
+</html>

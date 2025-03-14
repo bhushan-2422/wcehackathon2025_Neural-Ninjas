@@ -6,46 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaTrack -Home</title>
     <link rel="stylesheet" href="home.css">
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .nav-options{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 20px  black;
+            padding: 5px;
+        }
+        .home{
+            background-color: rgb(64, 64, 64);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: rgb(0, 46, 114);
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="hero">
         <div class="navbar">
-            <img src="./images/main ui logo.jpg" class="logo">
+            <img src="main ui logo.jpg" class="logo">
+            <div class="nav-options">
+                <a href="home.html" class="home">Home</a>
+                <a href="email-service/history.html" class="history">History</a>
+                <a href="" class="info">Info</a>
+
+            </div>
         </div>
         <div class="content">
             <small>Welcome to our</small>
             <h1>Welcome to <br>Aqua-Track </h1>
             <p>Your go-to solution for efficient water pipeline management</p>
             <br>
-            <div class="link"><a href="mainpage.html" class="main-page-link"><button>Take a tour</button></a></div>
+            <div class="link"><a href="index.html" class="main-page-link"><button>Take a tour</button></a></div>
 
         </div>
         <div class="side-bar">
-            <img src="images/menu.png" class="manu">
+            <img src="menu.png" class="manu">
             <div class="social-link">
-                <img src="images/fb.png" class="social">
-                <img src="images/ig.png" class="social">
-                <img src="images/tw.png" class="social">
+                <img src="./images/fb.png" class="social">
+                <img src="./images/ig.png" class="social">
+                <img src="./images/x.jpg" class="social">
             </div>
             <div class="useful-links">
-                <img src="images/share.png">
-                <img src="images/info.png">
+                <img src="./images/share.png">
+                <img src="./images/info.png">
             </div>
         </div>
         <div class="bubbles">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
-            <img src="images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
+            <img src="./images/bubble.png">
         </div>
     </div>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 8">
+           <div class="item" style="--position: 1"><img src="./images/city1.jpg"></div>
+           <div class="item" style="--position: 2"><img src="./images/city2.jpg"></div> 
+           <div class="item" style="--position: 3"><img src="./images/city3.jpg"></div>
+           <div class="item" style="--position: 4"><img src="./images/city4.jpg"></div>
+           <div class="item" style="--position: 5"><img src="./images/city5.jpg"></div>
+           <div class="item" style="--position: 6"><img src="./images/city6.jpg"></div>
+           <div class="item" style="--position: 7"><img src="./images/city7.jpg"></div>
+           <div class="item" style="--position: 8"><img src="./images/city8.jpg"></div>
+        </div>
+   </div>
+    
 </body>
 
 </html>

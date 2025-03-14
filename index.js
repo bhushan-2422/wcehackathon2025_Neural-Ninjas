@@ -10,3 +10,19 @@ function getLife(pipe) {
     return 0;
 }
 
+function thickness(pipe){
+    const width = pipe.offsetWidth;
+    return (width < 6) ? 3 : 1;
+}
+
+function farmland(pipe){
+    return pipe.classList.contains('farm') ? 3 : 0;
+}
+
+function tankarea(pipe){
+    return pipe.classList.contains('neartank') ? 3 : 0;
+}
+function material(pipe){
+    return pipe.classList.contains('plastic') ? 3 : 0;
+}
+

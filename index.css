@@ -584,7 +584,7 @@ body {
     top: 55%;
 }
 
-/* animations
+/* animations */
 .left{
     animation-name: slide-from-left;
     animation-duration: 2s;
@@ -646,4 +646,10 @@ body {
 .info  div{
     font-size: 15px;
     padding-right: 100px;
-} */
+}
+
+
+.cards{
+    font-size: 14px;
+    width: 80% ;
+}

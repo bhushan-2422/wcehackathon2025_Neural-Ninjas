@@ -124,13 +124,14 @@ h1 {
     width: 100%;
     z-index: 1000;
     overflow: hidden;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .pipe{
-    background-color: rgb(60, 195, 253);
+    background-color: rgb(253, 60, 60);
     width: 6px;
     height: 100px;
+    z-index: 1000;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -139,12 +140,118 @@ h1 {
 } 
 
 #pipe16{
-    rotate: 40deg;
-    height: 240px;
-    position: relative;
-    bottom: 2850px;
-    left: 370px;
+    rotate: 35deg;
+    height: 36%;
+    position: absolute;
+    top: 52%;
+    left: 38%;
 }
+#pipe17{
+    rotate: 22deg;
+    height: 27%;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+}
+#pipe18{
+    rotate: 25deg;
+    height: 23%;
+    position: absolute;
+    top: 46%;
+    left: 13%;
+}
+#pipe19{
+    rotate: 110deg;
+    height: 38%;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+}
+#pipe20{
+    rotate: 130deg;
+    height: 25%;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+#pipe21{
+    rotate: 90deg;
+    height: 20%;
+    position: absolute;
+    top: 81%;
+    left: 43%;
+}
+#pipe22{
+    rotate: 98deg;
+    height: 20%;
+    position: absolute;
+    top: 67%;
+    left: 62%;
+}
+#pipe23{
+    rotate: 120deg;
+    height: 28%;
+    position: absolute;
+    top: 52%;
+    left: 67%;
+}
+#pipe24{
+    rotate: 100deg;
+    height: 28%;
+    position: absolute;
+    top: 34%;
+    left: 72%;
+}
+#pipe25{
+    rotate: 104deg;
+    height: 52%;
+    position: absolute;
+    top: 6%;
+    left: 82%;
+}
+#pipe26{
+    rotate: 10deg;
+    height: 32%;
+    position: absolute;
+    top: 33%;
+    left: 82%;
+}
+#pipe27{
+    rotate: 48deg;
+    height: 22%;
+    position: absolute;
+    top: 61%;
+    left: 74%;
+}
+#pipe28{
+    rotate:100deg;
+    height: 26%;
+    position: absolute;
+    top: 40%;
+    left: 91%;
+}
+#pipe29{
+    rotate:100deg;
+    height: 30%;
+    position: absolute;
+    top: 52%;
+    left: 90%;
+}
+#pipe30{
+    rotate:140deg;
+    height: 35%;
+    position: absolute;
+    top: 68%;
+    left: 83%;
+}
+#pipe31{
+    rotate:160deg;
+    height: 25%;
+    position: absolute;
+    top: 77%;
+    left: 71%;
+}
+
 
 .pipelines.active {
     background-color: #4CAF50;
@@ -340,7 +447,7 @@ body {
     top: 55%;
 }
 
-/*animations*/
+/* animations
 .left{
     animation-name: slide-from-left;
     animation-duration: 2s;
@@ -402,4 +509,4 @@ body {
 .info  div{
     font-size: 15px;
     padding-right: 100px;
-}
+} */

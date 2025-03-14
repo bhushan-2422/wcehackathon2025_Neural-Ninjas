@@ -124,7 +124,7 @@ h1 {
     width: 100%;
     z-index: 1000;
     overflow: hidden;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .pipe{
@@ -138,6 +138,143 @@ h1 {
     align-items: center;
     box-shadow: 0 0 px 2px black;
 } 
+
+#pipe1 {
+    rotate: 122deg;
+    height: 28%;
+    position: absolute;
+    top: 3%;
+    left: 8%;
+}
+#pipe2 {
+    rotate: 35deg;
+    height: 15%;
+    position:absolute;
+    bottom: 83%;
+    left: 10%;
+}
+
+#pipe3 {
+    rotate: 106deg;
+    height: 20%;
+    position: absolute;
+    bottom: 83%;
+    left: 19%;
+}
+
+#pipe4 {
+    rotate: 40deg;
+    height: 19%;
+    position: absolute;
+    bottom: 74%;
+    left: 20%;
+}
+
+#pipe5 {
+    rotate: 35deg;
+    height: 16%;
+    position: absolute;
+    bottom: 70%;
+    left: 3%;
+}
+
+#pipe6 {
+    rotate: 118deg;
+    height: 16%;
+    position: absolute;
+    bottom: 60%;
+    left: 4%;
+}
+
+#pipe7 {
+    rotate: 38deg;
+    height: 15%;
+    position: absolute;
+    bottom: 63%;
+    left: 12%;
+}
+
+#pipe8 {
+    rotate: 25deg;
+    height: 28%;
+    position: absolute;
+    bottom: 38%;
+    left: 5%;
+}
+
+#pipe9 {
+    
+        rotate: 106deg;
+        height: 57%;
+        position: absolute;
+        bottom: 54%;
+        left: 46%;
+
+}
+
+#pipe10 {
+   
+        rotate: 106deg;
+        height: 67%;
+        position: absolute;
+        bottom: 39%;
+        left: 41%;
+    
+}
+
+#pipe11 {
+
+    rotate: 350deg;
+    height: 29%;
+    position: absolute;
+    bottom: 49%;
+    left: 28%;
+}
+
+#pipe12 {
+    rotate: 116deg;
+    height: 35%;
+    position: absolute;
+    bottom: 39%;
+    left: 19%;
+
+}
+
+#pipe13 {
+    rotate: 103deg;
+    height: 45%;
+    position: absolute;
+    bottom: 23%;
+    left: 44%;
+
+}
+
+#pipe14 {
+    rotate: 13deg;
+    height: 36%;
+    position: absolute;
+    bottom: 39%;
+    left: 62%;
+
+}
+
+#pipe15 {
+    rotate: 25deg;
+    height: 36%;
+    position: absolute;
+    bottom: 6%;
+    left: 54%;
+
+}
+
+#pipe16 {
+    rotate: 35deg;
+    height: 36%;
+    position: absolute;
+    bottom: 12%;
+    left: 38%;
+
+}
 
 #pipe16{
     rotate: 35deg;

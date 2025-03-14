@@ -1,186 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <title>AquaTrack-Home</title>
+    <link rel="stylesheet" href="ui.css">
 </head>
+
 <body>
-    <div class="stars"></div>
+    <div class="hero">
+        <div class="navbar">
+            <img src="./images/main ui logo.jpg" class="logo">
+            <div class="nav-options">
+                <a href="home.html" class="home">Home</a>
+                <a href="email-service/history.html" class="history">History</a>
+                <a href="" class="info">Info</a>
 
-    <div class="container">
-        <div class="left">
-            <img src="city-map.jpg" alt="" id="map">
-            <!-- <div class="zoom-controls">
-                <button onclick="zoomIn()">Zoom In</button>
-                <button onclick="zoomOut()">Zoom Out</button>
-            </div> -->
-            <div class="pipe-container">
-            
-                <div class="pipe area1 neartank" id="pipe1" data-manufacture-date="2024-01-01">1</div>
-                <div class="pipe area1 neartank" id="pipe2" data-manufacture-date="2024-01-01">2</div>
-                <div class="pipe area3 neartank" id="pipe3" data-manufacture-date="2016-01-01">3</div>
-                <div class="pipe area3 neartank" id="pipe4" data-manufacture-date="2016-01-01">4</div>
-                <div class="pipe area1 neartank" id="pipe5" data-manufacture-date="2024-01-01">5</div>
-                <div class="pipe area2 neartank" id="pipe6" data-manufacture-date="2019-01-01">6</div>
-                <div class="pipe area2 neartank" id="pipe7" data-manufacture-date="2019-01-01">7</div>
-                <div class="pipe area2 neartank" id="pipe8" data-manufacture-date="2019-01-01">8</div>
-                <div class="pipe area3 neartank" id="pipe9" data-manufacture-date="2016-01-01">9</div>
-                <div class="pipe area3 area5 neartank plastic" id="pipe10" data-manufacture-date="2016-01-01">10</div>
-                <div class="pipe area5 pastic" id="pipe11" data-manufacture-date="2016-01-01">11</div>
-                <div class="pipe area4 farm" id="pipe12" data-manufacture-date="2016-01-01">12</div>
-                <div class="pipe area6" id="pipe13" data-manufacture-date="2020-01-01">13</div>
-                <div class="pipe area7" id="pipe14" data-manufacture-date="2016-01-01">14</div>
-                <div class="pipe area8" id="pipe15" data-manufacture-date="2020-01-01">15</div>
-                <div class="pipe area6" id="pipe16" data-manufacture-date="2020-01-01">16</div>
-                <div class="pipe area6" id="pipe17" data-manufacture-date="2020-01-01">17</div>
-                <div class="pipe area4 farm" id="pipe18" data-manufacture-date="2016-01-01">18</div>
-                <div class="pipe area4 farm" id="pipe19" data-manufacture-date="2016-01-01">19</div>
-                <div class="pipe area6" id="pipe20" data-manufacture-date="2020-01-01">20</div>
-                <div class="pipe area6" id="pipe21" data-manufacture-date="2020-01-01">21</div>
-                <div class="pipe area8" id="pipe22" data-manufacture-date="2020-01-01">22</div>
-                <div class="pipe area8" id="pipe23" data-manufacture-date="2020-01-01">23</div>
-                <div class="pipe area7" id="pipe24" data-manufacture-date="2016-01-01">24</div>
-                <div class="pipe area7" id="pipe25" data-manufacture-date="2016-01-01">25</div>
-                <div class="pipe area7 area10 plastic" id="pipe26" data-manufacture-date="2016-01-01">26</div>
-                <div class="pipe area8 area9 farm" id="pipe27" data-manufacture-date="2020-01-01">27</div>
-                <div class="pipe area10 plastic" id="pipe28" data-manufacture-date="2015-01-01">28</div>
-                <div class="pipe area10 plastic" id="pipe29" data-manufacture-date="2015-01-01">29</div>
-                <div class="pipe area9 farm" id="pipe30" data-manufacture-date="2015-01-01">30</div>
-                <div class="pipe area9 farm" id="pipe31" data-manufacture-date="2015-01-01">31</div>
-            </div>
-            
-
-        </div>
-        <div class="right">
-            <div class="buttons">
-                <a href="" class="pipelines">Pipelines</a>
-                
-            </div>
-            <div class="info neon">
-                <div class="cards card1">
-                    <h4>Reasons</h4>
-                    <ol class="list1">
-                        
-                    </ol>
-                    <a href="area1.html" >view</a>
-                    
-                </div>
-                <!-- card2 -->
-                <div class="cards card2">
-                    <h4>Reasons</h4>
-                    <ol class="list2">
-                        
-                    </ol>
-                    <a href="area2.html" >view</a>
-                    
-                </div>
-                <!-- card3 -->
-                <div class="cards card3">
-                    <h4>Reasons</h4>
-                    <ol class="list3">
-                        
-                    </ol>
-                    <a href="area3.html" >view</a>
-                    
-                </div>
-                <!-- card4 -->
-                <div class="cards card4">
-                    <h4>Reasons</h4>
-                    <ol class="list4">
-                        
-                    </ol>
-                    <a href="area4.html" >view</a>
-                    
-                </div>
-                <!-- card5 -->
-                <div class="cards card5">
-                    <h4>Reasons</h4>
-                    <ol class="list5">
-                       
-                    </ol>
-                    <a href="area5.html" >view</a>
-                    
-                </div>
-                <!-- card6 -->
-                <div class="cards card6">
-                    <h4>Reasons</h4>
-                    <ol class="list6">
-                        
-                    </ol>
-                    <a href="area6.html" >view</a>
-                    
-                </div>
-                <!-- card7 -->
-                <div class="cards card7">
-                    <h4>Reasons</h4>
-                    <ol class="list7">
-                        
-                    </ol>
-                    <a href="area7.html" >view</a>
-                    
-                </div>
-                <!-- card8 -->
-                <div class="cards card8">
-                    <h4>Reasons</h4>
-                    <ol class="list8">
-                        
-                    </ol>
-                    <a href="area8.html" >view</a>
-                    
-                </div>
-                <!-- card9 -->
-                <div class="cards card9">
-                    <h4>Reasons</h4>
-                    <ol class="list9">
-                       
-                    </ol>
-                    <a href="area9.html" >view</a>
-                    
-                </div>
-                <!-- card10 -->
-                <div class="cards card10">
-                    <h4>Reasons</h4>
-                    <ol class="list10">
-                        
-                    </ol>
-                    <a href="area10.html" >view</a>
-                    
-                </div>
-                
-            </div>
-
-            <div class="cityinfo">
-                Sangli City Map
             </div>
         </div>
+        <div class="content">
+            <small>Welcome to our</small>
+            <h1>Welcome to <br>Aqua-Track </h1>
+            <p>Your go-to solution for efficient water pipeline management</p>
+            <br>
+            <div class="link"><a href="mainpage.html" class="main-page-link">Take a tour</a></div>
+            
+        </div>
+        <div class="side-bar">
+            <img src="images/menu.png" class="menu">
+            <div class="social-link">
+                <img src="images/fb.png" class="social">
+                <img src="images/ig.png" class="social">
+                <img src="images/tw.png" class="social">
+                </div>
+                <div class="useful-links">
+                    <img src="images/share.png">
+                    <img src="images/info.png">
+                </div>
+        </div>
 
-        
+        <div class="bubbles">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
+            <img src="images/bubble.png">
 
-        
-    
+        </div>
+
     </div>
-    <div class="area-container">
-        <div class="miraj area-name">Miraj</div>
-        <div class="ganpati-mandir area-name">Ganpati Mandir</div>
-        <div class="sphurti-chowk area-name">Sphurti chowk</div>
-        <div class="wce-campus area-name">WCE campus</div>
-        <div class="vijaynagar area-name">Vijaynagar</div>
-        <div class="rajvada area-name">rajvada</div>
-        <div class="gov-colony area-name">Gov colony</div>
-        <div class="vishrambag area-name">Vishrambag</div>
-        <div class="ftroad area-name">100ft road</div>
-        <div class="gayatri-nagar area-name">Gayatri Nagar</div>
 
-    </div>
-   
+    <div class="banner">
+        <div class="slider" style="--quantity: 8">
+           <div class="item" style="--position: 1"><img src="./images/city1.jpg"></div>
+           <div class="item" style="--position: 2"><img src="./images/city2.jpg"></div> 
+           <div class="item" style="--position: 3"><img src="./images/city3.jpg"></div>
+           <div class="item" style="--position: 4"><img src="./images/city4.jpg"></div>
+           <div class="item" style="--position: 5"><img src="./images/city5.jpg"></div>
+           <div class="item" style="--position: 6"><img src="./images/city6.jpg"></div>
+           <div class="item" style="--position: 7"><img src="./images/city7.jpg"></div>
+           <div class="item" style="--position: 8"><img src="./images/city8.jpg"></div>
+        </div>
+   </div>
 
-    <script src="index.js">
-        
-    </script>
-    
-    
-    
 </body>
+
 </html>

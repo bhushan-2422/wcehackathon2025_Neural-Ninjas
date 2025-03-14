@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area 9</title>
-    <link rel="stylesheet" href="area1.css">
+    <title>Area 10</title>
+    <link rel="stylesheet" href="rod.css">
 
 </head>
 
 <body>
     <div class="navbar">
         <div class="logo">
-            <img src="./images/logoofaquatrack.jpeg" alt="" loading="lazy" id="gamesync-logo">
+            <img src="dss.jpg" alt="" loading="lazy" id="gamesync-logo">
              Aqua-Track
         </div>
         <div class="navoptions">
@@ -39,26 +39,24 @@
     
         <div class="left">
             <div class="areaname">
-                Area 9
+                Area 10
             </div>
             <div class="image">
                 
 
-                <img src="./images/100ftroadmain.jpeg">
+                <img src="gayatri.jpg">
             </div>
             <div class="pipe-container">
-            <div class="spipe30 spipes sarea9">30</div>
-            <div class="spipe31 spipes sarea9">31</div>
-            <div class="spipe27 pipe27-2 spipes sarea9">27</div>
+            <div class="spipe28 spipes sarea10">28</div>
+            <div class="spipe29 spipes sarea10">29</div>
             </div>
-
         </div>
         <div class="right">
 
             <div class="info">
                 <h1>Reasons</h1>
                 <div class="reason">
-                    <ol class="slist9">
+                    <ol class="slist10">
 
                     </ol>
                 </div>
@@ -71,11 +69,11 @@
     <script >
         
         window.onload = function () {
-            let storedData = localStorage.getItem("listData9");
+            let storedData = localStorage.getItem("listData10");
         
             if (storedData) {
                 let itemsArray = JSON.parse(storedData);
-                let list = document.querySelector(".slist9");
+                let list = document.querySelector(".slist10");
         
                 itemsArray.forEach(itemText => {
                     let li = document.createElement("li");
@@ -88,13 +86,14 @@
                 console.log("No data found in localStorage");
             }
 
-            let savedColor9 = localStorage.getItem("savedColor9");
-    let sarea9 = document.querySelectorAll(".sarea9");
-    if (savedColor9 && sarea9) {
-        sarea9.forEach(element => {
-        element.style.backgroundColor = savedColor9; // Apply stored color to all matching elements
+            let savedColor10 = localStorage.getItem("savedColor10");
+    let sarea10 = document.querySelectorAll(".sarea10");
+    if (savedColor10 && sarea10) {
+        sarea10.forEach(element => {
+        element.style.backgroundColor = savedColor10; // Apply stored color to all matching elements
     });    }
         };
+
         
         
             </script>

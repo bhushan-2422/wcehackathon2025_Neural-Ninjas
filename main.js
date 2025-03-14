@@ -28,6 +28,7 @@ function getLife(pipe) {
     return 0;
 }
 
+
 // Calculate Thickness
 function getThickness(pipe) {
     const width = pipe.offsetWidth;
@@ -158,6 +159,60 @@ function updateLists() {
 updateLists();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// // Select all area classes from 1 to 10
+// for (let i = 1; i <= 10; i++) {
+//     const elements = document.querySelectorAll(`.area${i}`);
+    
+//     elements.forEach(el => {
+//         el.addEventListener('mouseover', () => {
+//             elements.forEach(item => {
+//                 item.style.boxShadow = '0 0 2px 2px black';
+//             });
+//         });
+
+//         el.addEventListener('mouseout', () => {
+//             elements.forEach(item => {
+//                 item.style.boxShadow = 'none';
+//             });
+//         });
+//     });
+// }
+
+
+
+// const areas = document.querySelectorAll('.area1');
+
+
+// areas.forEach(area => {
+//     area.addEventListener('mouseenter', () => {
+//         areas.forEach(item => {
+//             item.style.transform = 'scale(1.2)';
+//         });
+//     });
+
+//     area.addEventListener('mouseleave', () => {
+//         areas.forEach(item => {
+//             item.style.transform = 'scale(1)';
+//         });
+//     });
+// });
+
+
+
+
+
 // glow effect
 let activeClass = null; // Track the currently glowing class
 
@@ -242,6 +297,61 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
         }
+    }
+});
+
+
+//star bg
+document.addEventListener("DOMContentLoaded", function () {
+    const starContainer = document.querySelector(".stars");
+    const numStars = 100;
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    // Track mouse movement
+    document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    function createStar() {
+        const star = document.createElement("div");
+        star.classList.add("star");
+
+        // Random position
+        let startX = Math.random() * window.innerWidth;
+        let startY = Math.random() * window.innerHeight;
+        star.style.left = `${startX}px`;
+        star.style.top = `${startY}px`;
+
+        // Random size
+        let size = Math.random() * 5 + 3; // Between 3px and 8px
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+
+        // Random color
+        const colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff", "#ffffff"];
+        let randomColor = colors[Math.floor(Math.random() * colors.length)];
+        star.style.backgroundColor = randomColor;
+        star.style.boxShadow = `0 0 15px ${randomColor}`;
+
+        // Random movement animation
+        star.style.animation = `randomMovement ${Math.random() * 5 + 3}s infinite alternate ease-in-out`;
+
+        starContainer.appendChild(star);
+
+        function moveStarWithCursor() {
+            let dx = (mouseX - startX) * 0.02; // Small movement factor
+            let dy = (mouseY - startY) * 0.02;
+            star.style.transform = `translate(${dx}px, ${dy}px)`;
+            requestAnimationFrame(moveStarWithCursor);
+        }
+        moveStarWithCursor();
+    }
+
+    // Create multiple stars
+    for (let i = 0; i < numStars; i++) {
+        createStar();
     }
 });
 

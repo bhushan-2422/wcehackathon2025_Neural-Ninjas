@@ -128,268 +128,251 @@ h1 {
 }
 
 .pipe{
-    background-color: rgb(253, 60, 60);
+    background-color: rgb(60, 195, 253);
     width: 6px;
     height: 100px;
-    z-index: 1000;
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 px 2px black;
 } 
-
-#pipe1 {
-    rotate: 122deg;
-    height: 28%;
-    position: absolute;
-    top: 3%;
-    left: 8%;
-}
-#pipe2 {
-    rotate: 35deg;
-    height: 15%;
-    position:absolute;
-    bottom: 83%;
-    left: 10%;
-}
-
-#pipe3 {
-    rotate: 106deg;
-    height: 20%;
-    position: absolute;
-    bottom: 83%;
-    left: 19%;
-}
-
-#pipe4 {
+#pipe1{
+    rotate: 120deg;
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+    height: 230px;
+} 
+#pipe2{
     rotate: 40deg;
-    height: 19%;
-    position: absolute;
-    bottom: 74%;
-    left: 20%;
+    position: relative;
+    bottom: 220px;
+    left: 90px;
+    height: 110px;
 }
-
-#pipe5 {
-    rotate: 35deg;
-    height: 16%;
-    position: absolute;
-    bottom: 70%;
-    left: 3%;
+#pipe3{
+    rotate: 110deg;
+    height: 130px;
+    position: relative;
+    bottom: 350px;
+    left: 180px;
 }
-
-#pipe6 {
-    rotate: 118deg;
-    height: 16%;
-    position: absolute;
-    bottom: 60%;
-    left: 4%;
+#pipe4{
+    rotate: 50deg;
+    height: 130px;
+    position: relative;
+    bottom: 420px;
+    left: 190px;
 }
-
-#pipe7 {
-    rotate: 38deg;
-    height: 15%;
-    position: absolute;
-    bottom: 63%;
-    left: 12%;
+#pipe5{
+    rotate: 40deg;
+    height: 100px;
+    position: relative;
+    bottom: 500px;
+    left: 25px;
 }
-
-#pipe8 {
+#pipe6{
+    rotate: 110deg;
+    height: 90px;
+    position: relative;
+    bottom: 520px;
+    left: 30px;
+}
+#pipe7{
+    rotate: 40deg;
+    height: 120px;
+    position: relative;
+    bottom: 650px;
+    left: 100px;
+}
+#pipe8{
     rotate: 25deg;
-    height: 28%;
-    position: absolute;
-    bottom: 38%;
-    left: 5%;
+    height: 190px;
+    position: relative;
+    bottom: 680px;
+    left: 30px;
 }
-
-#pipe9 {
-    
-        rotate: 106deg;
-        height: 57%;
-        position: absolute;
-        bottom: 54%;
-        left: 46%;
-
+#pipe9{
+    rotate: 105deg;
+    height: 400px;
+    position: relative;
+    bottom: 1180px;
+    left: 420px;
 }
-
-#pipe10 {
-   
-        rotate: 106deg;
-        height: 67%;
-        position: absolute;
-        bottom: 39%;
-        left: 41%;
-    
+#pipe10{
+    rotate: 105deg;
+    height: 450px;
+    position: relative;
+    bottom: 1540px;
+    left: 390px;
 }
-
-#pipe11 {
-
-    rotate: 350deg;
-    height: 29%;
-    position: absolute;
-    bottom: 49%;
-    left: 28%;
+#pipe11{
+    rotate: 170deg;
+    height: 200px;
+    position: relative;
+    bottom: 1805px;
+    left: 270px;
 }
-
-#pipe12 {
-    rotate: 116deg;
-    height: 35%;
-    position: absolute;
-    bottom: 39%;
-    left: 19%;
-
+#pipe12{
+    rotate: 115deg;
+    height: 250px;
+    position: relative;
+    bottom: 1985px;
+    left: 180px;
 }
-
-#pipe13 {
-    rotate: 103deg;
-    height: 45%;
-    position: absolute;
-    bottom: 23%;
-    left: 44%;
+#pipe13{
+    rotate: 100deg;
+    height: 300px;
+    position: relative;
+    bottom: 2185px;
+    left: 430px;
+}
+#pipe14{
+    rotate: 10deg;
+    height: 230px;
+    position: relative;
+    bottom: 2540px;
+    left: 590px;
+    width: 4px;
 
 }
-
-#pipe14 {
-    rotate: 13deg;
-    height: 36%;
-    position: absolute;
-    bottom: 39%;
-    left: 62%;
-
-}
-
-#pipe15 {
+#pipe15{
     rotate: 25deg;
-    height: 36%;
-    position: absolute;
-    bottom: 6%;
-    left: 54%;
+    height: 260px;
+    position: relative;
+    bottom: 2560px;
+    left: 520px;
+    width: 4px;
 
 }
-
-#pipe16 {
-    rotate: 35deg;
-    height: 36%;
-    position: absolute;
-    bottom: 12%;
-    left: 38%;
-
-}
-
 #pipe16{
-    rotate: 35deg;
-    height: 36%;
-    position: absolute;
-    top: 52%;
-    left: 38%;
+    rotate: 40deg;
+    height: 240px;
+    position: relative;
+    bottom: 2850px;
+    left: 370px;
 }
 #pipe17{
-    rotate: 22deg;
-    height: 27%;
-    position: absolute;
-    top: 50%;
-    left: 27%;
+    rotate: 25deg;
+    height: 180px;
+    position: relative;
+    bottom: 3100px;
+    left: 250px;
 }
 #pipe18{
     rotate: 25deg;
-    height: 23%;
-    position: absolute;
-    top: 46%;
-    left: 13%;
+    height: 180px;
+    position: relative;
+    bottom: 3330px;
+    left: 150px;
 }
 #pipe19{
-    rotate: 110deg;
-    height: 38%;
-    position: absolute;
-    top: 50%;
-    left: 12%;
+    rotate: 115deg;
+    height: 250px;
+    position: relative;
+    bottom: 3460px;
+    left: 110px;
 }
 #pipe20{
-    rotate: 130deg;
-    height: 25%;
-    position: absolute;
-    top: 70%;
-    left: 30%;
+    rotate: 125deg;
+    height: 190px;
+    position: relative;
+    bottom: 3575px;
+    left: 295px;
 }
 #pipe21{
     rotate: 90deg;
-    height: 20%;
-    position: absolute;
-    top: 81%;
-    left: 43%;
+    height: 100px;
+    position: relative;
+    bottom: 3670px;
+    left:420px;
 }
 #pipe22{
-    rotate: 98deg;
-    height: 20%;
-    position: absolute;
-    top: 67%;
-    left: 62%;
+    rotate: 100deg;
+    height: 140px;
+    position: relative;
+    bottom: 3890px;
+    left:590px;
+    width: 4px;
+
 }
 #pipe23{
     rotate: 120deg;
-    height: 28%;
-    position: absolute;
-    top: 52%;
-    left: 67%;
+    height: 170px;
+    position: relative;
+    bottom: 4125px;
+    left:640px;
+    width: 4px;
+
 }
 #pipe24{
     rotate: 100deg;
-    height: 28%;
-    position: absolute;
-    top: 34%;
-    left: 72%;
+    height: 190px;
+    position: relative;
+    bottom: 4415px;
+    left:680px;
+    width: 4px;
+
 }
 #pipe25{
-    rotate: 104deg;
-    height: 52%;
-    position: absolute;
-    top: 6%;
-    left: 82%;
+    rotate: 105deg;
+    width: 4px;
+    height: 380px;
+    position: relative;
+    bottom: 4802px;
+    left:790px;
 }
 #pipe26{
     rotate: 10deg;
-    height: 32%;
-    position: absolute;
-    top: 33%;
-    left: 82%;
+    height:220px;
+    position: relative;
+    bottom: 4990px;
+    left:780px;
+    width: 4px;
+
 }
 #pipe27{
-    rotate: 48deg;
-    height: 22%;
-    position: absolute;
-    top: 61%;
-    left: 74%;
+    rotate: 50deg;
+    height:140px;
+    position: relative;
+    bottom: 5020px;
+    left:710px;
+    width: 4px;
+
 }
 #pipe28{
-    rotate:100deg;
-    height: 26%;
-    position: absolute;
-    top: 40%;
-    left: 91%;
+    rotate: 100deg;
+    height:180px;
+    position: relative;
+    bottom: 5310px;
+    left:860px;
 }
 #pipe29{
-    rotate:100deg;
-    height: 30%;
-    position: absolute;
-    top: 52%;
-    left: 90%;
+    rotate: 100deg;
+    height:190px;
+    position: relative;
+    bottom: 5400px;
+    left:860px;
 }
 #pipe30{
-    rotate:140deg;
-    height: 35%;
-    position: absolute;
-    top: 68%;
-    left: 83%;
+    rotate: 140deg;
+    height:240px;
+    position: relative;
+    bottom: 5490px;
+    left:790px;
+    width: 4px;
+
 }
 #pipe31{
-    rotate:160deg;
-    height: 25%;
-    position: absolute;
-    top: 77%;
-    left: 71%;
+    rotate: 160deg;
+    height:150px;
+    position: relative;
+    bottom: 5660px;
+    left:680px;
+    width: 4px;
+
 }
-
-
 .pipelines.active {
     background-color: #4CAF50;
     color: white;
@@ -584,7 +567,7 @@ body {
     top: 55%;
 }
 
-/* animations */
+/*animations*/
 .left{
     animation-name: slide-from-left;
     animation-duration: 2s;
@@ -646,10 +629,4 @@ body {
 .info  div{
     font-size: 15px;
     padding-right: 100px;
-}
-
-
-.cards{
-    font-size: 14px;
-    width: 80% ;
 }

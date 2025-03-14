@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Email History</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(63, 90, 84);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container border mt-3 bg-light p-4">
+        <h1>Work Assign history </h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="historyTable">
+                <!-- Rows will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        async function fetchHistory() {
+            try {
+                const response = await fetch("https://wcehackathon2025-neural-ninjas.onrender.com");
+                const history = await response.json();
+
+                const historyTable = document.getElementById("historyTable");
+                history.forEach(entry => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${entry.name}</td>
+                        <td>${entry.email}</td>
+                        <td>${entry.message}</td>
+                        <td>${entry.date}</td>
+                    `;
+                    historyTable.appendChild(row);
+                });
+            } catch (error) {
+                console.error("Error fetching history:", error);
+            }
+        }
+
+        // Fetch history when the page loads
+        fetchHistory();
+    </script>
+</body>
+</html>

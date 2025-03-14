@@ -7,15 +7,15 @@
     
 }
 .container {
-    display: flex;
+    display: flex;  /* Enables side-by-side layout */
     width: 100%;
-    height: 80%;  
+    height: 80%;  /* Full viewport height */
 }
 
 .left {
     width: 50%;
     display: flex;
-    
+    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     
@@ -44,10 +44,10 @@
 }
 .image {
     
-    width: 51%;
-    height: 60%;
+    width: 400px;
+    height: 400px;
     background-color: chartreuse;
-    margin-top: 5%;
+   
     border-radius: 20px;
     box-shadow: 0 0 20px 2px  rgb(3, 255, 234);
     
@@ -71,13 +71,13 @@ img{
     
 }
 .reason{
-text-align: left;
+
 height: 60%;
 width: 100%;
    
 }
 body {
-    background-image: url("./images/background.jpeg") ;
+    background-image: url(./images/background.png) ;
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center; 
@@ -100,48 +100,30 @@ body {
 
 }
 .navoptions{
+    
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-arond;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight: 550;
     font-family: monospace;
     font-style: normal;
     color: white;
 }
-#home,#features,#pricing,#blog,#about{
-    color: white;
-}
-
-.navoptions:hover{
-color: blue;
-}
-#home:hover{
-    background-color: yellow;
-}
-
-#pricing:hover{
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-}
-#blog:hover{
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-}
 #about:hover{
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
+    border: 2px solid white;
+    
+}
+#features:hover{
+    border: 2px solid white;
+    
+}#blog:hover{
+    border: 2px solid white;
+    
+}#pricing:hover{
+    border: 2px solid white;
+    
 }
 
 *{
@@ -174,32 +156,22 @@ a{
     display: inline-block;
 }
 .call-button {
+    background-color: rgb(48, 48, 49);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     
     padding: 15px;
-    color: black;
-   
+    border-radius: 25px;
 }
 .call-button:hover{
-    color: white;
+    background-color: rgb(50, 98, 160);
+    transform: scale(1.1);
 }
-.checkout{
-    border: none;
-    border-radius: 25px;
-    
-}
-.checkout:hover{
-    border: 2px solid gold;
-    background-color: rgb(87, 136, 220);
-    color: rgb(58, 75, 207);
-}
-
-
 .pipe-container{
     position: absolute;
     top: 0;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
    
     
     
@@ -207,36 +179,32 @@ a{
 }
 .spipes{
     z-index: 1000;
-    background-color: rgb(25, 108, 23);
-    overflow: hidden;
+    background-color: rgb(20, 255, 239);
 }
 .spipe1{
-    height: 55%;
-    width: 1px;
+    height: 51%;
+    width: 12px;
     position: absolute;
-    top: 33%;
-    left: 49.4%;
-    rotate: -68.8deg;
-    font-weight: bolder;
+    top: 36%;
+    left: 48%;
+    rotate: -63deg;
     
 }
 .spipe2{
     height: 35%;
     width: 12px;
     position: absolute;
-    top: 26.3%;
-    left: 50%;
-    rotate: 40deg;
-    font-weight: bolder;
+    top: 28%;
+    left: 51%;
+    rotate: 44deg;
 }
 .spipe5{
-    height: 25%;
+    height: 26%;
     width: 12px;
     position: absolute;
-    top: 53.6%;
-    left: 42%;
+    top: 56%;
+    left: 41%;
     rotate: 44deg;
-    font-weight: bolder;
 }
 
 .spipe6{
@@ -245,45 +213,39 @@ a{
     position: absolute;
     top: 31%;
     left: 43%;
-    rotate: 110deg;
-    font-weight: bolder;
+    rotate: 103deg;
 }
 .spipe7{
-    height: 20%;
+    height: 32%;
     width: 12px;
     position: absolute;
-    top: 33%;
-    left: 52%;
-    rotate: 49deg;
-    font-weight: bolder;
+    top: 22%;
+    left: 55%;
+    rotate: 50deg;
 }
 .spipe8{
-    height: 35%;
+    height: 38%;
     width: 12px;
     position: absolute;
     top: 45%;
     left: 44%;
     rotate: 35deg;
-    font-weight: bolder;
 }
 .spipe4{
-    height: 25%;
+    height: 18%;
     width: 09px;
     position: absolute;
-    top: 42%;
-    left: 42%;
+    top: 39%;
+    left: 39%;
     rotate: 35deg;
-    z-index: 2000;
-    font-weight: bolder;
 }
 .spipe3 {
-    height: 12%;
+    height: 9%;
     width: 09px;
     position: absolute;
-    top: 32.5%;
-    left: 40%;
+    top: 34%;
+    left: 39%;
     rotate: 120deg;
-    font-weight: bolder;
 }
 
 .spipe9 {
@@ -296,61 +258,57 @@ a{
 }
 
 .pipe10-1 {
-    height: 42%;
+    height: 54%;
     width: 09px; 
     position: absolute;
     top: 40%;
-    left: 52%;
+    left: 50%;
     rotate: 117deg;
-    font-weight: bolder;
 }
 
 .spipe12 {
-    height: 40%;
+    height: 44%;
     width: 09px;
     position: absolute;
-    top: 18%;
+    top: 14%;
     left: 53%;
     rotate: 113deg;
-
 }
 
 .spipe18 {
-    height: 30%;
+    height: 38%;
     width: 09px;
     position: absolute;
-    top: 38%;
+    top: 36%;
     left: 51%;
     rotate: 26deg;
 }
 
 .spipe19 {
-    height: 35%;
+    height: 40%;
     width: 09px;
     position: absolute;
-    top: 48%;
+    top: 52%;
     left: 46%;
     rotate: 114deg;
 }
 
 .pipe10-2 {
-    height: 54%;
+    height: 56%;
     width: 09px;
     position: absolute;
     top: 15%;
     left: 50%;
-    rotate: 113deg;  
-    font-weight: bolder; 
+    rotate: 113deg;   
 }
 
 .spipe11 {
-    height: 42%;
+    height: 43%;
     width: 09px;
     position: absolute;
-    top: 35%;
+    top: 37%;
     left: 44%;
     rotate: 353deg;
-    font-weight: bolder;
 }
 
 .spipe13 {
@@ -359,14 +317,14 @@ a{
     position: absolute;
     top: 16%;
     left: 51%;
-    rotate: 80deg;
+    rotate: 103deg;
 }
 
 .spipe17 {
     height: 31%;
     width: 08px;
     position: absolute;
-    top: 36.5%;
+    top: 29%;
     left: 40%;
     rotate: 19deg;
 }
@@ -375,37 +333,36 @@ a{
     height: 27%;
     width: 09px;
     position: absolute;
-    top: 58%;
-    left: 43.2%;
-    rotate: 110deg;
+    top: 55%;
+    left: 42%;
+    rotate: 134deg;
 }
 
 .spipe21 {
     height: 13%;
     width: 09px;
     position: absolute;
-    top: 69.5%;
-    left: 52%;
+    top: 72%;
+    left: 50%;
     rotate: 90deg;
 }
 
 .spipe16 {
-    height: 40%;
+    height: 36%;
     width: 09px;
     position: absolute;
     top: 34%;
     left: 47%;
-    rotate: 22deg;
+    rotate: 31deg;
 }
 
 .spipe14 {
-    height: 42%;
+    height: 45%;
     width: 07px;
     position: absolute;
     top: 35%;
     left: 42%;
     rotate: 7deg;
-    z-index: 2000;
 }
 
 .spipe24 {
@@ -421,7 +378,7 @@ a{
     height: 35%;
     width: 09px;
     position: absolute;
-    top: 25%;
+    top: 23%;
     left: 51%;
     rotate: 109deg;
 }
@@ -433,11 +390,10 @@ a{
     top: 59%;
     left: 45%;
     rotate: 104deg;
-    z-index: 2000;
 }
 
 .spipe15 {
-    height: 39%;
+    height: 43%;
     width: 09px;
     position: absolute;
     top: 37%;
@@ -446,44 +402,43 @@ a{
 }
 
 .spipe23 {
-    height: 36.4%;
+    height: 35%;
     width: 09px;
     position: absolute;
-    top: 34%;
+    top: 32%;
     left: 50%;
-    rotate: 120deg;
-    z-index: 2000;
+    rotate: 132deg;
 }
 
 .pipe27-1 {
     height: 32%;
     width: 09px;
     position: absolute;
-    top: 48%;
+    top: 46%;
     left: 56%;
-    rotate: 40deg;
+    rotate: 38.5deg;
 }
 
 .pipe27-2 {
-    height: 20%;
+    height: 25%;
     width: 09px;
     position: absolute;
-    top: 27.5%;
-    left: 45%;
+    top: 23%;
+    left: 46%;
     rotate: 45deg; 
 }
 
 .spipe31 {
-    height: 35%;
+    height: 38%;
     width: 06px;
     position: absolute;
     top: 43%;
-    left: 44.5%;
+    left: 45%;
     rotate: 163deg;
 }
 
 .spipe30 {
-    height: 50%;
+    height: 54%;
     width: 09px;
     position: absolute;
     top: 27%;
@@ -492,7 +447,7 @@ a{
 }
 
 .spipe28 {
-    height: 50%;
+    height: 52%;
     width: 09px;
     position: absolute;
     top: 23%;
@@ -501,7 +456,7 @@ a{
 }
 
 .spipe29 {
-    height: 40%;
+    height: 42%;
     width: 09px;
     position: absolute;
     top: 49%;
@@ -510,12 +465,5 @@ a{
 }
 
 .spipes{
-    width: 1%;
+    width: 14px;
 }
-/* .head{
-    background-color: white;
-    color: black;
-    padding: 5px;
-    border: none;
-    border-radius: 4px;
-} */
